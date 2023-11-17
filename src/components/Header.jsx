@@ -1,4 +1,5 @@
 import { CiSearch ,CiBellOn , CiFilter, CiHeart , CiSettings } from "react-icons/ci";
+import { HiMiniAdjustmentsHorizontal } from "react-icons/hi2";
 import useImg from "../assets/image/user.jpg";
 
 const Header = () => {
@@ -8,9 +9,11 @@ const Header = () => {
             <div className="flex flex-1 justify-between items-center px-8">
                 <h1 className="text-blue-600 text-2xl font-bold mr-20">MORENT</h1>
                 <div className="flex flex-1 items-center ring-1 ring-gray-300 px-2 rounded-full">
-                    <CiSearch size={25} className="text-gray-500 cursor-pointer"/>
+                    
+                    <CiSearch size={25} className="text-gray-500 cursor-pointerij"/>
                     <input type="text" placeholder="search something here..." className="bg-transparent mx-4 w-full py-2 outline-none"/>
-                    <CiFilter size={25} className="text-gray-500 cursor-pointer"/>
+                    
+                    <HiMiniAdjustmentsHorizontal size={25} className="text-gray-500 cursor-pointerij"/>
                 </div>
             </div>
             {/* panel */}
