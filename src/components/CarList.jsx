@@ -44,6 +44,7 @@ const CarList = () => {
             {
                 popularCar(false).map(c => {
                     return <SingleCar
+                            key={c.id}
                             name={c.name}
                             liked={c.liked}
                             category={c.category}

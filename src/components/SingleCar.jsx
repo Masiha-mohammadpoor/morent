@@ -4,7 +4,7 @@ import { FaHeart , FaRegHeart , FaGasPump , FaLifeRing , FaUserFriends } from "r
 
 const SingleCar = ({name , liked , category , image , tankVolume , capacity , rentPrice}) => {
     return (
-        <div className="bg-white rounded-md col-span-3 mx-auto w-60 p-5">
+        <div className="bg-white rounded-md col-span-3 mx-auto w-64 p-5">
             <div className="flex justify-between items-center">
                 <p className="font-bold">{name}</p>
                 <button>
@@ -25,7 +25,7 @@ const SingleCar = ({name , liked , category , image , tankVolume , capacity , re
                     <h3 className="font-bold text-lg">${rentPrice}/</h3>
                     <small className="text-gray-400 text-xs">day</small>
                 </h3>
-                <button className="bg-blue-600 rounded-sm text-white py-2 px-3">Rent Now</button>
+                <button className="bg-blue-600 rounded-md text-white py-2 px-3">Rent Now</button>
             </div>
         </div>
     );
