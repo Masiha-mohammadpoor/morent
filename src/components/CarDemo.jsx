@@ -7,9 +7,10 @@ import { HiArrowPath } from "react-icons/hi2";
 const CarDemo = () => {
     return (
         <section>
-        <article className="flex justify-center items-center mt-5">
+        {/* car demo */}
+        <article className="flex justify-center items-center md:mt-5 pt-0">
             {/* car demo 1 */}
-            <div className="car-demo1 flex flex-col justify-between items-start flex-1 ml-28 mr-3  p-4 rounded-md h-76">
+            <div className="-mt-10 md:mt-8 scale-75 md:scale-100 car-demo1 flex flex-col justify-between items-start flex-1 md:ml-28 md:mr-3  p-4 rounded-md h-76">
                 <h2 className=" mb-3 font-bold text-2xl leading-8 text-white">The best platform <br/> for car rental</h2>
                 <p className="w-80 text-white text-md mb-3">Ease of doing a car rental safely and reliably. Of course at a low price.</p>
                 <button className="py-3 px-4 text-white rounded-md bg-blue-400">Rental Car</button>
@@ -18,7 +19,7 @@ const CarDemo = () => {
                 </div>
             </div>
             {/* car demo 2 */}
-            <div className="car-demo2 flex flex-col justify-between items-start flex-1 mr-28 ml-3  p-4 rounded-md h-76">
+            <div className="-mt-10 md:mt-8 car-demo2 hidden md:flex flex-col justify-between items-start md:flex-1 mr-28 ml-3  p-4 rounded-md h-76">
             <h2 className=" mb-3 font-bold text-2xl leading-8 text-white">Easy way to rent a <br/> car at a low price</h2>
                 <p className="w-80 text-white text-md mb-3">Providing cheap car rental services and safe and comfortable facilities.</p>
                 <button className="py-3 px-4 text-white rounded-md bg-blue-600">Rental Car</button>
@@ -28,9 +29,9 @@ const CarDemo = () => {
             </div>
         </article>
         {/* location & date */}
-        <article className="flex justify-between items-center mt-5 mx-28 gap-x-3">
+        <article className="flex flex-col md:flex-row justify-between items-center mt-5 mx-28 gap-x-3">
             {/* 1 */}
-            <div className="flex bg-white rounded-md flex-1 flex-col p-3">
+            <div className="w-80 overflow-x-scroll md:overflow-x-auto md:w-auto flex bg-white rounded-md flex-1 flex-col p-3">
                 <div className="mb-4 ml-2">
                     <input type="radio" checked className="mr-2"/>
                     Pick-Up
@@ -62,9 +63,9 @@ const CarDemo = () => {
                 </div>
             </div>
             {/* button */}
-            <button className="p-3 rounded-md bg-blue-500 text-white text-lg"><HiArrowPath/></button>
+            <button className="my-2 p-3 rounded-md bg-blue-500 text-white text-lg"><HiArrowPath/></button>
             {/* 2 */}
-            <div className="flex bg-white rounded-md flex-1 flex-col p-3">
+            <div className="w-80 md:w-auto overflow-x-scroll flex bg-white rounded-md flex-1 flex-col p-3">
                 <div className="mb-4 ml-2">
                     <input type="radio" checked className="mr-2"/>
                     Drop-Off

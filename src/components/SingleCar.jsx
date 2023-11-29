@@ -4,7 +4,7 @@ import { FaHeart , FaRegHeart , FaGasPump , FaLifeRing , FaUserFriends } from "r
 
 const SingleCar = ({name , liked , category , image , tankVolume , capacity , rentPrice}) => {
     return (
-        <div className="bg-white rounded-md col-span-3 mx-auto w-64 p-5">
+        <div className="bg-white rounded-md col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 md:scale-95 mx-auto w-64 p-5">
             <div className="flex justify-between items-center">
                 <p className="font-bold">{name}</p>
                 <button>

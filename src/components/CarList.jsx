@@ -12,11 +12,11 @@ const CarList = () => {
         }
     }
     return (
-        <section className="mt-20 mx-20 pb-10">
+        <section className="mt-20 mx-4 xl:mx-20 md:mx-2 pb-10">
             <article>
-            <div className="mb-7 mx-8 flex justify-between items-center">
-                <p className="text-gray-500">Popular Car</p>
-                <button className="text-blue-600">View All</button>
+            <div className="mb-7 md:mx-8 flex justify-between items-center">
+                <p className="text-gray-500 text-sm md:text-base">Popular Car</p>
+                <button className="text-blue-600 text-sm md:text-base">View All</button>
             </div>
             <div className="grid justify-between gap-y-7 grid-cols-12">
             {
@@ -36,11 +36,11 @@ const CarList = () => {
             </article>
             {/*  Recomendation Car  */}
             <article className="mt-12">
-            <div className="mb-7 mx-8 flex justify-between items-center">
-                <p className="text-gray-500">Recomendation Car</p>
-                <button className="text-blue-600">View All</button>
+            <div className="mb-7 md:mx-8 flex justify-between items-center">
+                <p className="text-gray-500 text-sm md:text-base">Recomendation Car</p>
+                <button className="text-blue-600 text-sm md:text-base">View All</button>
             </div>
-            <div className="grid justify-between gap-y-7 grid-cols-12">
+            <div className="grid justify-between gap-y-7 grid-cols-12 mx-0">
             {
                 popularCar(false).map(c => {
                     return <SingleCar
