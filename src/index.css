@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "comforta";
+    src: url("./assets/font/Comfortaa-Regular.otf") format("otf"),
+    url("./assets/font/Comfortaa-Regular.ttf") format("ttf"),
+    url("./assets/font/Comfortaa-Regular.woff") format("woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: comforta;
+}
+
+body {
+background: #e5e7eb;
+}
+
+.car-demo1 {
+    background: rgb(30,191,187);
+background: radial-gradient(circle, rgba(30,191,187,1) 1%, rgba(27,107,210,1) 49%, rgba(9,84,211,1) 100%);
+}
+
+.car-demo2 {
+    background: rgb(40,102,201);
+background: radial-gradient(circle, rgba(40,102,201,1) 1%, rgba(27,113,186,1) 49%, rgba(9,196,211,1) 100%);
+}
